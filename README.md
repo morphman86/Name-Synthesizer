@@ -8,6 +8,7 @@ This project demonstrates a set of Python scripts designed to process, generate,
 
 ## Project Structure
 
+
 ```bash
 name_synth/
 ├── db/
