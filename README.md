@@ -8,19 +8,20 @@ This project demonstrates a set of Python scripts designed to process, generate,
 
 ## Project Structure
 
-`name_synth/`
-├── `db/`
-│   ├── `syllables.json`          # JSON file containing syllable data from names
-│   └── `names.txt`               # Text file containing a list of names to process
-├── `dict/`
-│   └── `phonemes_english.txt`    # Dictionary mapping phonemes to English characters
-└── `__init__.py`                 # For if you want to turn this into a package
-├── `syllable_parser.py`          # Script to parse names into phonetic syllables
-├── `phoneme_to_text.py`          # Script to convert phonemes into readable English
-├── `phonetic_name_generator.py`  # Script to generate random names from syllables
-├── `.gitignore`                  # Git ignore file
-└── `README.md`                   # Project README file
-└── `LICENSE.md`                  # License agreement
+```bash
+name_synth/
+├── db/
+│   ├── syllables.json          # JSON file containing syllable data from names
+│   └── names.txt               # Text file containing a list of names to process
+├──  dict/
+│   └──  phonemes_english.txt    # Dictionary mapping phonemes to English characters
+├──  syllable_parser.py          # Script to parse names into phonetic syllables
+├──  phoneme_to_text.py          # Script to convert phonemes into readable English
+├──  phonetic_name_generator.py  # Script to generate random names from syllables
+├──  .gitignore                  # Git ignore file
+├──  README.md                   # Project README file
+└──  LICENSE.md                  # License agreement
+```
 
 ## Usage
 
@@ -47,8 +48,8 @@ To make your own random name generator:
 **Alternatively, you can skip phonetic_name_generator completely and run translate_generated_names(phoneme_repository, phoneme_dictionary_file, num_names_to_generate, debug)
 ** This method will generate num_names_to_generate names and translate them to text for you
 - Whichever method you use, you should now see any phonetic syllables not yet "translated" in the terminal output
-** Either create a new dictionary, or update `dict/phonemes_english.dict` with the missing phonemes.
-*** You can search your input JSON file (default: `db/syllables_english.json`) for any phonetic syllables you are unsure of the spelling for
+** Either create a new dictionary, or update  dict/phonemes_english.dict` with the missing phonemes.
+*** You can search your input JSON file (default:  db/syllables_english.json`) for any phonetic syllables you are unsure of the spelling for
 - Congratulations, you now have a program that can create new names using the same grammatical structure as your input names.
 
 ## License
